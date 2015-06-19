@@ -14,16 +14,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'KlavikaWebBasicRegular';
+  src: url('../fonts/KlavikaWebBasicRegular.eot?#iefix') format('embedded-opentype'),  url('../fonts/KlavikaWebBasicRegular.otf')  format('opentype'),
+	     url('../fonts/KlavikaWebBasicRegular.woff') format('woff'), url('../fonts/KlavikaWebBasicRegular.ttf')  format('truetype'), url('../fonts/KlavikaWebBasicRegular.svg#KlavikaWebBasicRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'KlavikaWebBasicLight';
+  src: url('../fonts/KlavikaWebBasicLight.eot?#iefix') format('embedded-opentype'),  url('../fonts/KlavikaWebBasicLight.otf')  format('opentype'),
+	     url('../fonts/KlavikaWebBasicLight.woff') format('woff'), url('../fonts/KlavikaWebBasicLight.ttf')  format('truetype'), url('../fonts/KlavikaWebBasicLight.svg#KlavikaWebBasicLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body::before {
 	content: 'mobile';
 	display: none;
 }
 
 body {
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
 	height: 100%;
 	width: 100%;
 	color: #fff;
-	font-family: 'ProximaNova-Thin', 'Helvetica', 'Arial', 'Sans-serif';
+	font-family: 'KlavikaWebBasicLight', 'ProximaNova-Thin', 'Helvetica', 'Arial', 'Sans-serif';
 	background: url(../library/images/mobile-bg.jpg) no-repeat;
 	background-size: cover; 
 }
