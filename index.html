@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Media Loft</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="js/libs/jquery-2.1.4.min.js"></script>
 	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -16,9 +17,31 @@
 			<p><em>launching soon.</em></p>
 		</div>
 		<div class="overlay"></div>
-		<video autoplay loop poster="library/media/videos/posters/splash-poster.jpg">
+		<video id="vid" loop poster="library/media/videos/posters/splash-poster.jpg">
 			<source src="library/media/videos/43644_ML-Chalkboard-BW-1080p-final.mp4" type="video/mp4">
 		</video>
+		<style>
+			video {
+				display: none;
+			}
+		</style>		
+		<script>
+		(function($){
+			var video = $('#vid');
+
+			video.on('canplay', function(){
+				video.fadeIn();
+				video[0].play();
+			});
+		})(jQuery);
+		// document.addEventListener("DOMContentLoaded", function() {
+		// 	var video = document.getElementById('vid');
+		// 	video.addEventListener("canplay", function(){
+		// 		video.style.display = 'block';
+		// 		video.play();
+		// 	});
+		// });		
+		</script>
 	</div>
 	<div id="bottom-nav">
 		<ul class="contact">
