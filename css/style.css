@@ -159,19 +159,19 @@ body a {
 }
 
 .social .linkedin-square {
-	background-position-x: -52px;
+	background-position: -52px 0;
 }
 
 .social .twitter-square {
-	background-position-x: -107px;
+	background-position: -107px 0;
 }
 
 .social .facebook-square {
-	background-position-x: -160px;
+	background-position: -160px 0;
 }
 
 .social .envelope-o {
-	background-position-x: -214px;
+	background-position: -214px 0;
 	width: 23px; 
 }
 
