@@ -1,4 +1,5 @@
 $(function(){
+	var video = $('#vid');
 
 	var breakpoint = {};
 
@@ -11,19 +12,19 @@ $(function(){
 
 		if(breakpoint.value === 'desktop'){
 			console.log('desktop');
-			var video = $('#vid');
 			
 			$('source', video).attr('src', 'library/media/videos/43644_ML-Chalkboard-BW-1080p-final.mp4');
-
-			video.load();
-
-			video.on('canplay', function(){
-				video.fadeIn();
-				video[0].play();
-			});		
+	
 		} else if (breakpoint.value === 'mobile') {
 			console.log('mobile');
 		}	  
 	}).resize();
+
+	video.load();
+
+	video.on('canplay', function(){
+		video.fadeIn();
+		video[0].play();
+	});	
 
 });
