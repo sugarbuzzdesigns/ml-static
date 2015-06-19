@@ -6,8 +6,9 @@
 	<title>Media Loft</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/libs/jquery-2.1.4.min.js"></script>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +19,7 @@
 		</div>
 		<div class="overlay"></div>
 		<video id="vid" loop poster="library/media/videos/posters/splash-poster.jpg">
-			<source src="library/media/videos/43644_ML-Chalkboard-BW-1080p-final.mp4" type="video/mp4">
+			<source src="" type="video/mp4">
 		</video>
 		<style>
 			video {
@@ -27,20 +28,8 @@
 		</style>		
 		<script>
 		(function($){
-			var video = $('#vid');
 
-			video.on('canplay', function(){
-				video.fadeIn();
-				video[0].play();
-			});
-		})(jQuery);
-		// document.addEventListener("DOMContentLoaded", function() {
-		// 	var video = document.getElementById('vid');
-		// 	video.addEventListener("canplay", function(){
-		// 		video.style.display = 'block';
-		// 		video.play();
-		// 	});
-		// });		
+		})(jQuery);		
 		</script>
 	</div>
 	<div id="bottom-nav">
@@ -58,6 +47,7 @@
 				</a>	
 			</li>			
 		</ul>
+		<hr>
 		<ul class="social">
 			<li><a target="_blank" href="https://instagram.com/medialoft/"><i class="instagram"></i></a></li>
 			<li><a target="_blank" href="https://www.linkedin.com/company/media-loft"><i class="linkedin-square"></i></a></li>
@@ -66,5 +56,6 @@
 			<li><a target="_blank" href="mailto:info@medialoft.com"><i class="envelope-o"></i></a></li>
 		</ul>
 	</div>	
+	<script src="js/main.js"></script>
 </body>
 </html>
