@@ -75,6 +75,10 @@ body a {
 	margin-right: 30px;
 }
 
+#bottom-nav ul li:last-child {
+	margin-right: 0;
+}
+
 #bottom-nav ul:last-child li {
 	margin-right: 20px;
 }
